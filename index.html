@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GLCM Calculation App by Amm99</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>GLCM Calculation App by Amm99</h1>
+      <h2 class="imp">Implementation: Azure</h2>
+      <article class="settings">
+        <h2>Settings</h2>
+        <h3>d</h3>
+        <hr>
+        <label><input type="radio" name="d" checked onchange="setGap(1)"/>1</label>
+        <label><input type="radio" name="d" onchange="setGap(2)"/>2</label>
+        <label><input type="radio" name="d" onchange="setGap(3)"/>3</label>
+        <label><input type="radio" name="d" onchange="setGap(4)"/>4</label>
+        <label><input type="radio" name="d" onchange="setGap(5)"/>5</label>
+        <h3>θ</h3>
+        <hr>
+        <label><input type="radio" name="angle" checked onchange="setAngle(0)"/>0</label>
+        <label><input type="radio" name="angle" onchange="setAngle(45)"/>45</label>
+        <label><input type="radio" name="angle" onchange="setAngle(90)"/>90</label>
+        <label><input type="radio" name="angle" onchange="setAngle(135)"/>135</label>
+        <label><input type="radio" name="angle" onchange="setAngle(180)"/>180</label>
+        <label><input type="radio" name="angle" onchange="setAngle(225)"/>225</label>
+        <label><input type="radio" name="angle" onchange="setAngle(270)"/>270</label>
+        <label><input type="radio" name="angle" onchange="setAngle(315)"/>315</label>
+      </article>
+      <article class="input">
+        <h2>Input Matrix:</h2><br><br><br>
+        <div id="InputMatrix">
+        </div>
+      </article>
+      <article class="glcm">
+        <h2>GLCM Matrix:</h2><br><br><br>
+        <div id="GLCMMatrix">
+        </div>
+      </article>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
